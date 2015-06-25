@@ -1,0 +1,53 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="main graph"
+n1[style="filled",color="white",fillcolor="lightgray",label="Photograph1"];
+n2[shape="plaintext",style="filled",fillcolor="gold",label="id"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="createdAt_iso"];
+n4[shape="plaintext",style="filled",fillcolor="gold",label="height"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="photo_url"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="width"];
+n7[style="filled",color="white",fillcolor="lightgray",label="Country1"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="country"];
+n9[style="filled",color="white",fillcolor="lightgray",label="GeoCoordinates1"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="lat-lng"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="lat"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="lng"];
+n13[style="filled",color="white",fillcolor="lightgray",label="Place1"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="id"];
+n15[style="filled",color="white",fillcolor="lightgray",label="PostalAddress1"];
+n16[shape="plaintext",style="filled",fillcolor="gold",label="pluralName"];
+n17[shape="plaintext",style="filled",fillcolor="gold",label="phone"];
+n18[shape="plaintext",style="filled",fillcolor="gold",label="name"];
+n19[shape="plaintext",style="filled",fillcolor="gold",label="city"];
+n20[shape="plaintext",style="filled",fillcolor="gold",label="state"];
+n21[shape="plaintext",style="filled",fillcolor="gold",label="address"];
+n22[style="filled",color="white",fillcolor="lightgray",label="GeoShape1"];
+n23[shape="plaintext",style="filled",fillcolor="gold",label="boundingbox"];
+n24[shape="plaintext",style="filled",fillcolor="gold",label="name"];
+n25[shape="plaintext",style="filled",fillcolor="gold",label="postalCode"];
+n1 -> n2[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n1 -> n3[color="brown",fontcolor="black",label="dateCreated\nw=1.0"]
+n1 -> n4[color="brown",fontcolor="black",label="height\nw=1.0"]
+n1 -> n5[color="brown",fontcolor="black",label="url\nw=1.0"]
+n1 -> n6[color="brown",fontcolor="black",label="width\nw=1.0"]
+n7 -> n8[color="brown",fontcolor="black",label="label\nw=1.0"]
+n9 -> n10[color="brown",fontcolor="black",label="description\nw=1.0"]
+n9 -> n11[color="brown",fontcolor="black",label="latitude\nw=1.0"]
+n9 -> n12[color="brown",fontcolor="black",label="longitude\nw=1.0"]
+n13 -> n14[color="brown",fontcolor="black",label="classLink\nw=1.0"]
+n13 -> n15[color="brown",fontcolor="black",label="address\nw=0.99999"]
+n13 -> n16[color="brown",fontcolor="black",label="description\nw=1.0"]
+n13 -> n9[color="brown",fontcolor="black",label="geo\nw=0.99999"]
+n13 -> n17[color="brown",fontcolor="black",label="telephone\nw=1.0"]
+n13 -> n18[color="brown",fontcolor="black",label="label\nw=1.0"]
+n15 -> n7[color="brown",fontcolor="black",label="addressCountry\nw=1.0"]
+n15 -> n19[color="brown",fontcolor="black",label="addressLocality\nw=1.0"]
+n15 -> n20[color="brown",fontcolor="black",label="addressRegion\nw=1.0"]
+n15 -> n21[color="brown",fontcolor="black",label="streetAddress\nw=1.0"]
+n22 -> n23[color="brown",fontcolor="black",label="box\nw=1.0"]
+n13 -> n24[color="brown",fontcolor="black",label="columnSubClassOfLink\nw=1.0"]
+n13 -> n22[color="brown",fontcolor="black",label="geo\nw=1.0"]
+n15 -> n25[color="brown",fontcolor="black",label="postalCode\nw=1.0"]
+}

@@ -1,0 +1,1521 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/> .
+@prefix medusa-content: <http://medusa.usc.edu/thesauri/content/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix medusa: <http://medusa.usc.edu/ontology/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19ntacotgx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "google-nearbysearch-sample.json" ;
+	km-dev:modelPublicationTime "1434429318067"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"results\"},{\"columnName\":\"reference\"}],[{\"columnName\":\"results\"},{\"columnName\":\"vicinity\"}],[{\"columnName\":\"results\"},{\"columnName\":\"id\"}],[{\"columnName\":\"results\"},{\"columnName\":\"types\"},{\"columnName\":\"values\"}],[{\"columnName\":\"results\"},{\"columnName\":\"name\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lng\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"results\"},{\"columnName\":\"vicinity\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lat-lng\"}],[{\"columnName\":\"results\"},{\"columnName\":\"id\"}],[{\"columnName\":\"results\"},{\"columnName\":\"name\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"results\"},{\"columnName\":\"types\"},{\"columnName\":\"types_nice\"}]]" ;
+	km-dev:hasModelLabel "google-nearbysearch" ;
+	km-dev:hasBaseURI "http://medusa.usc.edu/data/google/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"google-nearbysearch\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://medusa.usc.edu/data/google/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"gl\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"reference\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Place\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Place1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Place\",
+                    \"DomainId\": \"http://schema.org/Place1 (add)\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Place1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"reference\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"name\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Place\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"schema:Place1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"id\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Place\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Place1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Place\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Place1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"UnassignSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"reference\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"reference\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1 (add)\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lng\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"types_nice\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return glTypesNice(getValue(\\\"values\\\"))\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"types_nice\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"types_nice\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Place\",
+                    \"DomainId\": \"http://schema.org/Place2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/description\",
+                    \"DomainLabel\": \"schema:Place2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"types_nice\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"UnassignSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"types_nice\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"types_nice\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"types_nice\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Place\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/description\",
+                    \"DomainLabel\": \"schema:Place1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"types_nice\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"types_nice\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }]
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"vicinity\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/PostalAddress\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"schema:PostalAddress1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"vicinity\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"vicinity\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"html_attributions\",
+                        \"id\": [{\"columnName\": \"html_attributions\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"next_page_token\",
+                        \"id\": [{\"columnName\": \"next_page_token\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"location\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geometry\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"location\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"viewport\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geometry\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"viewport\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"geometry\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"icon\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"icon\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"id\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"id\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"name\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"place_id\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"place_id\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"reference\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"reference\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"scope\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"scope\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"values\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"values\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"types_nice\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types_nice\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"types\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"vicinity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"vicinity\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"height\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"height\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"photos\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"html_attributions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"html_attributions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"html_attributions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"photo_reference\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photo_reference\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"width\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"width\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"photos\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"price_level\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"price_level\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"rating\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"rating\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"open_now\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"opening_hours\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"open_now\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"weekday_text\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"opening_hours\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"weekday_text\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"opening_hours\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"opening_hours\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"results\",
+                        \"id\": [{\"columnName\": \"results\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"status\",
+                        \"id\": [{\"columnName\": \"status\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"html_attributions\",
+                        \"id\": [{\"columnName\": \"html_attributions\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"next_page_token\",
+                        \"id\": [{\"columnName\": \"next_page_token\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"location\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geometry\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"location\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"viewport\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geometry\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"viewport\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"geometry\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"icon\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"icon\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"id\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"id\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"name\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"place_id\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"place_id\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"reference\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"reference\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"scope\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"scope\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"values\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"values\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"types_nice\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types_nice\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"types\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"vicinity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"vicinity\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"height\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"height\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"photos\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"html_attributions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"html_attributions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"html_attributions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"photo_reference\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photo_reference\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"width\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"width\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"photos\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"price_level\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"price_level\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"rating\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"rating\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"open_now\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"opening_hours\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"open_now\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"weekday_text\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"opening_hours\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"weekday_text\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"opening_hours\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"opening_hours\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"results\",
+                        \"id\": [{\"columnName\": \"results\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"status\",
+                        \"id\": [{\"columnName\": \"status\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"html_attributions\",
+                        \"id\": [{\"columnName\": \"html_attributions\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"next_page_token\",
+                        \"id\": [{\"columnName\": \"next_page_token\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"location\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geometry\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"location\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"northeast\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"geometry\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"viewport\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"southwest\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"viewport\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geometry\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"viewport\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"geometry\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"icon\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"icon\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"id\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"id\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"name\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"place_id\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"place_id\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"reference\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"reference\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"scope\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"scope\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"values\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"values\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"types_nice\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"types_nice\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"types\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"vicinity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"vicinity\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"height\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"height\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"results\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"photos\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"html_attributions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"html_attributions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"html_attributions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"photo_reference\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photo_reference\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"width\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photos\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"width\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"photos\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"price_level\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"price_level\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"rating\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"rating\\\"}]},{\\\"visible\\\":false,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"open_now\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"opening_hours\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"open_now\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"weekday_text\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"results\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"opening_hours\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"weekday_text\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"opening_hours\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"opening_hours\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"results\",
+                        \"id\": [{\"columnName\": \"results\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"status\",
+                        \"id\": [{\"columnName\": \"status\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/address\",
+                    \"edgeTargetId\": \"http://schema.org/PostalAddress1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }]
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/address\",
+                    \"edgeTargetId\": \"http://schema.org/PostalAddress1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lng\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"lat-lng\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getLatLong(getValue(\\\"lat\\\"),getValue(\\\"lng\\\"))\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat-lng\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Place\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/globalLocationNumber\",
+                    \"DomainLabel\": \"schema:Place1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:string\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat-lng\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/description\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:string\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    },
+                    {
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    },
+                    {
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd a rr:TriplesMap .
+
+_:node19ntacotgx1 km-dev:hasTriplesMap km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd .
+
+km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx2 rr:tableName "google-nearbysearch-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasLogicalTable _:node19ntacotgx2 .
+
+km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd rr:logicalTable _:node19ntacotgx2 ;
+	rr:subjectMap _:node19ntacotgx3 .
+
+_:node19ntacotgx1 km-dev:hasSubjectMap _:node19ntacotgx3 .
+
+_:node19ntacotgx3 km-dev:isPartOfMapping _:node19ntacotgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_4ebb99a2-7d0d-4f5b-b5e7-dd053e330caa rr:predicate schema:description .
+
+_:node19ntacotgx4 rr:column "[\"results\",\"geometry\",\"location\",\"lat-lng\"]" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap _:node19ntacotgx4 .
+
+km-dev:PredicateObjectMap_4ebb99a2-7d0d-4f5b-b5e7-dd053e330caa rr:objectMap _:node19ntacotgx4 .
+
+km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd rr:predicateObjectMap km-dev:PredicateObjectMap_4ebb99a2-7d0d-4f5b-b5e7-dd053e330caa .
+
+km-dev:PredicateObjectMap_4ebb99a2-7d0d-4f5b-b5e7-dd053e330caa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4ebb99a2-7d0d-4f5b-b5e7-dd053e330caa .
+
+km-dev:PredicateObjectMap_7df21d8b-a5c9-4ff1-a4f0-3da443ca4019 rr:predicate schema:latitude .
+
+_:node19ntacotgx5 rr:column "[\"results\",\"geometry\",\"location\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap _:node19ntacotgx5 .
+
+km-dev:PredicateObjectMap_7df21d8b-a5c9-4ff1-a4f0-3da443ca4019 rr:objectMap _:node19ntacotgx5 .
+
+km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd rr:predicateObjectMap km-dev:PredicateObjectMap_7df21d8b-a5c9-4ff1-a4f0-3da443ca4019 .
+
+km-dev:PredicateObjectMap_7df21d8b-a5c9-4ff1-a4f0-3da443ca4019 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7df21d8b-a5c9-4ff1-a4f0-3da443ca4019 .
+
+km-dev:PredicateObjectMap_088c1ef0-8bc4-49aa-8289-92869e5a73f4 rr:predicate schema:longitude .
+
+_:node19ntacotgx6 rr:column "[\"results\",\"geometry\",\"location\",\"lng\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap _:node19ntacotgx6 .
+
+km-dev:PredicateObjectMap_088c1ef0-8bc4-49aa-8289-92869e5a73f4 rr:objectMap _:node19ntacotgx6 .
+
+km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd rr:predicateObjectMap km-dev:PredicateObjectMap_088c1ef0-8bc4-49aa-8289-92869e5a73f4 .
+
+km-dev:PredicateObjectMap_088c1ef0-8bc4-49aa-8289-92869e5a73f4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_088c1ef0-8bc4-49aa-8289-92869e5a73f4 .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 a rr:TriplesMap .
+
+_:node19ntacotgx1 km-dev:hasTriplesMap km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx7 rr:tableName "google-nearbysearch-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasLogicalTable _:node19ntacotgx7 .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 rr:logicalTable _:node19ntacotgx7 ;
+	rr:subjectMap _:node19ntacotgx8 .
+
+_:node19ntacotgx1 km-dev:hasSubjectMap _:node19ntacotgx8 .
+
+_:node19ntacotgx8 km-dev:isPartOfMapping _:node19ntacotgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place ;
+	rr:template "{[\"results\",\"id\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_2fb2d4d2-3194-4e20-a6df-64c4e822bd4b rr:predicate schema:address .
+
+km-dev:RefObjectMap_91cfa19a-9abd-4d3c-9159-a11eb402d366 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_491c62e0-b329-4ce6-a9ce-bae7154e955e ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap km-dev:RefObjectMap_91cfa19a-9abd-4d3c-9159-a11eb402d366 .
+
+km-dev:PredicateObjectMap_2fb2d4d2-3194-4e20-a6df-64c4e822bd4b rr:objectMap km-dev:RefObjectMap_91cfa19a-9abd-4d3c-9159-a11eb402d366 .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 rr:predicateObjectMap km-dev:PredicateObjectMap_2fb2d4d2-3194-4e20-a6df-64c4e822bd4b .
+
+km-dev:PredicateObjectMap_2fb2d4d2-3194-4e20-a6df-64c4e822bd4b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2fb2d4d2-3194-4e20-a6df-64c4e822bd4b .
+
+km-dev:PredicateObjectMap_12d698e6-6932-4e42-a489-7feda251a7a0 rr:predicate schema:description .
+
+_:node19ntacotgx9 rr:column "[\"results\",\"types\",\"types_nice\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap _:node19ntacotgx9 .
+
+km-dev:PredicateObjectMap_12d698e6-6932-4e42-a489-7feda251a7a0 rr:objectMap _:node19ntacotgx9 .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 rr:predicateObjectMap km-dev:PredicateObjectMap_12d698e6-6932-4e42-a489-7feda251a7a0 .
+
+km-dev:PredicateObjectMap_12d698e6-6932-4e42-a489-7feda251a7a0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_12d698e6-6932-4e42-a489-7feda251a7a0 .
+
+km-dev:PredicateObjectMap_c54c1671-b988-486e-8df2-169f8b65c6db rr:predicate schema:geo .
+
+km-dev:RefObjectMap_5acebccf-5bb9-4b28-8b99-c41288623eaa a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f9bf1f36-c843-4726-9ec7-523258314ffd ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap km-dev:RefObjectMap_5acebccf-5bb9-4b28-8b99-c41288623eaa .
+
+km-dev:PredicateObjectMap_c54c1671-b988-486e-8df2-169f8b65c6db rr:objectMap km-dev:RefObjectMap_5acebccf-5bb9-4b28-8b99-c41288623eaa .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 rr:predicateObjectMap km-dev:PredicateObjectMap_c54c1671-b988-486e-8df2-169f8b65c6db .
+
+km-dev:PredicateObjectMap_c54c1671-b988-486e-8df2-169f8b65c6db a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c54c1671-b988-486e-8df2-169f8b65c6db .
+
+km-dev:PredicateObjectMap_0d25f71f-feb8-49c9-8503-f9245aeb08f4 rr:predicate rdfs:label .
+
+_:node19ntacotgx10 rr:column "[\"results\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap _:node19ntacotgx10 .
+
+km-dev:PredicateObjectMap_0d25f71f-feb8-49c9-8503-f9245aeb08f4 rr:objectMap _:node19ntacotgx10 .
+
+km-dev:TriplesMap_3e108604-46fd-44b0-85b5-d8175ffbb441 rr:predicateObjectMap km-dev:PredicateObjectMap_0d25f71f-feb8-49c9-8503-f9245aeb08f4 .
+
+km-dev:PredicateObjectMap_0d25f71f-feb8-49c9-8503-f9245aeb08f4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0d25f71f-feb8-49c9-8503-f9245aeb08f4 .
+
+km-dev:TriplesMap_491c62e0-b329-4ce6-a9ce-bae7154e955e a rr:TriplesMap .
+
+_:node19ntacotgx1 km-dev:hasTriplesMap km-dev:TriplesMap_491c62e0-b329-4ce6-a9ce-bae7154e955e .
+
+km-dev:TriplesMap_491c62e0-b329-4ce6-a9ce-bae7154e955e km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx11 rr:tableName "google-nearbysearch-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasLogicalTable _:node19ntacotgx11 .
+
+km-dev:TriplesMap_491c62e0-b329-4ce6-a9ce-bae7154e955e rr:logicalTable _:node19ntacotgx11 ;
+	rr:subjectMap _:node19ntacotgx12 .
+
+_:node19ntacotgx1 km-dev:hasSubjectMap _:node19ntacotgx12 .
+
+_:node19ntacotgx12 km-dev:isPartOfMapping _:node19ntacotgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/PostalAddress1" ;
+	rr:class schema:PostalAddress ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:PostalAddress1" .
+
+km-dev:PredicateObjectMap_d04deb89-5727-4a5e-9a90-e64587ec475b rr:predicate rdfs:label .
+
+_:node19ntacotgx13 rr:column "[\"results\",\"vicinity\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasObjectMap _:node19ntacotgx13 .
+
+km-dev:PredicateObjectMap_d04deb89-5727-4a5e-9a90-e64587ec475b rr:objectMap _:node19ntacotgx13 .
+
+km-dev:TriplesMap_491c62e0-b329-4ce6-a9ce-bae7154e955e rr:predicateObjectMap km-dev:PredicateObjectMap_d04deb89-5727-4a5e-9a90-e64587ec475b .
+
+km-dev:PredicateObjectMap_d04deb89-5727-4a5e-9a90-e64587ec475b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19ntacotgx1 .
+
+_:node19ntacotgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d04deb89-5727-4a5e-9a90-e64587ec475b .

@@ -1,0 +1,1604 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix medusa-content: <http://medusa.usc.edu/thesauri/content/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix medusa: <http://medusa.usc.edu/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19om8m1onx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "foursquare-sample.json" ;
+	km-dev:modelPublicationTime "1435266385688"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "foursquare" ;
+	km-dev:hasBaseURI "http://medusa.usc.edu/data/foursquare/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"foursquare\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://medusa.usc.edu/data/foursquare/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"fs\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1 (add)\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"contact\"},
+                    {\"columnName\": \"phone\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/telephone\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"contact\\\"},{\\\"columnName\\\":\\\"phone\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"contact\\\"},{\\\"columnName\\\":\\\"phone\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"address\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/streetAddress\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:PostalAddress1 (add)\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1 (add)\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"address\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"address\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"city\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/addressLocality\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:PostalAddress1\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"city\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"city\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"state\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/addressRegion\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:PostalAddress1\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"state\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"state\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"country\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Country1 (add)\",
+                    \"DomainId\": \"http://schema.org/Country1 (add)\",
+                    \"DomainUri\": \"http://schema.org/Country\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"country\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"country\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"categories\"},
+                    {\"columnName\": \"pluralName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/description\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"categories\\\"},{\\\"columnName\\\":\\\"pluralName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"categories\\\"},{\\\"columnName\\\":\\\"pluralName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/addressCountry\",
+                        \"edgeSourceId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeTargetId\": \"http://schema.org/Country1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/addressCountry\",
+                        \"edgeSourceId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeTargetId\": \"http://schema.org/Country1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1 (add)\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"photo_get_url\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return photoGetRequest(getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"photo_get_url\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"meta\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"meta\",
+                        \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"meta\\\"},{\\\"columnName\\\":\\\"code\\\"}],\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"code\\\"}]\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"notifications\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"notifications\",
+                        \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"notifications\\\"},{\\\"columnName\\\":\\\"type\\\"}],\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"type\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"notifications\\\"},{\\\"columnName\\\":\\\"item\\\"}],\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"item\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"notifications\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"item\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"unreadCount\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"unreadCount\\\\\\\"}]\\\"}]\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"response\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"response\",
+                        \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"venues\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"id\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"id\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photo_get_url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"photo_get_url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"name\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"name\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"contact\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"contact\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"phone\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"phone\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedPhone\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedPhone\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"twitter\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"twitter\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebook\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebook\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookUsername\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookUsername\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookName\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookName\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"location\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"location\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"address\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"address\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"distance\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"distance\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"postalCode\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"postalCode\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cc\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cc\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"city\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"city\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"state\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"state\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"country\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"country\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedAddress\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedAddress\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"formattedAddress\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"crossStreet\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"crossStreet\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"categories\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"categories\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pluralName\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pluralName\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"shortName\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"shortName\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"prefix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"prefix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"suffix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"suffix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"primary\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"primary\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"verified\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"verified\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"stats\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"stats\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stats\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"checkinsCount\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"checkinsCount\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stats\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"usersCount\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"usersCount\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stats\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tipCount\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tipCount\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"specials\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"specials\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"specials\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"specials\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hereNow\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hereNow\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summary\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summary\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"storeId\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"storeId\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"referralId\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"referralId\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venuePage\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"venuePage\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venuePage\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"menu\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"menu\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"label\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"label\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"anchor\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"anchor\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"url\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"url\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mobileUrl\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mobileUrl\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"externalUrl\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"externalUrl\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hasMenu\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hasMenu\\\\\\\"}]\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"confident\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"confident\\\"}]\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"meta\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"meta\",
+                        \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"meta\\\"},{\\\"columnName\\\":\\\"code\\\"}],\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"code\\\"}]\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"notifications\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"notifications\",
+                        \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"notifications\\\"},{\\\"columnName\\\":\\\"type\\\"}],\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"type\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"notifications\\\"},{\\\"columnName\\\":\\\"item\\\"}],\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"item\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"notifications\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"item\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"unreadCount\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"unreadCount\\\\\\\"}]\\\"}]\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"response\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"response\",
+                        \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"venues\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"id\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"id\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"photo_get_url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"photo_get_url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"name\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"name\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"contact\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"contact\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"phone\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"phone\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedPhone\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedPhone\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"twitter\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"twitter\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebook\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebook\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookUsername\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookUsername\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"contact\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookName\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"facebookName\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"location\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"location\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lat\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"lng\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"distance\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"distance\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"address\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"address\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"postalCode\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"postalCode\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cc\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"cc\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"city\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"city\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"state\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"state\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"country\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"country\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedAddress\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"formattedAddress\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"formattedAddress\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"values\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"location\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"crossStreet\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"crossStreet\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"categories\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"categories\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pluralName\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"pluralName\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"shortName\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"shortName\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"prefix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"prefix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"icon\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"suffix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"suffix\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"categories\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"primary\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"primary\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"verified\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"verified\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"stats\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"stats\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stats\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"checkinsCount\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"checkinsCount\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stats\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"usersCount\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"usersCount\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"stats\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tipCount\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"tipCount\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"url\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"url\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"specials\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"specials\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"specials\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"specials\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hereNow\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hereNow\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summary\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"summary\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"count\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hereNow\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"groups\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"items\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"storeId\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"storeId\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"referralId\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"referralId\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venuePage\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"venuePage\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venuePage\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"menu\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"menu\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"type\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"label\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"label\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"anchor\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"anchor\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"url\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"url\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mobileUrl\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"mobileUrl\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"response\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"venues\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"menu\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"externalUrl\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"externalUrl\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"response\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"venues\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hasMenu\\\\\\\"}],\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hasMenu\\\\\\\"}]\\\"},{\\\"id\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"confident\\\"}],\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"confident\\\"}]\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"lat-lng\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return getLatLong(getValue(\\\"lat\\\"),getValue(\\\"lng\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat-lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/globalLocationNumber\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/addressCountry\",
+                        \"edgeSourceId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeTargetId\": \"http://schema.org/Country1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/addressCountry\",
+                        \"edgeSourceId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeTargetId\": \"http://schema.org/Country1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"venues\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat-lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/description\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"venues\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat-lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/addressCountry\",
+                        \"edgeSourceId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeTargetId\": \"http://schema.org/Country1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://schema.org/addressCountry\",
+                        \"edgeSourceId\": \"http://schema.org/PostalAddress1\",
+                        \"edgeTargetId\": \"http://schema.org/Country1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/address\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/PostalAddress1\"
+                    },
+                    {
+                        \"edgeId\": \"http://schema.org/geo\",
+                        \"edgeSourceId\": \"http://schema.org/Place1\",
+                        \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"model\": \"new\",
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e a rr:TriplesMap .
+
+_:node19om8m1onx1 km-dev:hasTriplesMap km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx2 rr:tableName "foursquare-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasLogicalTable _:node19om8m1onx2 .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e rr:logicalTable _:node19om8m1onx2 ;
+	rr:subjectMap _:node19om8m1onx3 .
+
+_:node19om8m1onx1 km-dev:hasSubjectMap _:node19om8m1onx3 .
+
+_:node19om8m1onx3 km-dev:isPartOfMapping _:node19om8m1onx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place ;
+	rr:template "{[\"response\",\"venues\",\"id\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_98354de2-cc37-4910-adad-77a2308cedee rr:predicate schema:geo .
+
+km-dev:RefObjectMap_fd2182cc-344e-4414-ad92-6a6540e74296 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap km-dev:RefObjectMap_fd2182cc-344e-4414-ad92-6a6540e74296 .
+
+km-dev:PredicateObjectMap_98354de2-cc37-4910-adad-77a2308cedee rr:objectMap km-dev:RefObjectMap_fd2182cc-344e-4414-ad92-6a6540e74296 .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e rr:predicateObjectMap km-dev:PredicateObjectMap_98354de2-cc37-4910-adad-77a2308cedee .
+
+km-dev:PredicateObjectMap_98354de2-cc37-4910-adad-77a2308cedee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_98354de2-cc37-4910-adad-77a2308cedee .
+
+km-dev:PredicateObjectMap_ffd342ce-7223-41cf-b569-cde168cd4898 rr:predicate schema:address .
+
+km-dev:RefObjectMap_ff55f428-ce2d-4294-96bf-8fc8c4947327 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap km-dev:RefObjectMap_ff55f428-ce2d-4294-96bf-8fc8c4947327 .
+
+km-dev:PredicateObjectMap_ffd342ce-7223-41cf-b569-cde168cd4898 rr:objectMap km-dev:RefObjectMap_ff55f428-ce2d-4294-96bf-8fc8c4947327 .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e rr:predicateObjectMap km-dev:PredicateObjectMap_ffd342ce-7223-41cf-b569-cde168cd4898 .
+
+km-dev:PredicateObjectMap_ffd342ce-7223-41cf-b569-cde168cd4898 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ffd342ce-7223-41cf-b569-cde168cd4898 .
+
+km-dev:PredicateObjectMap_c0185202-24d1-464b-8cab-9357cb5aabfc rr:predicate schema:telephone .
+
+_:node19om8m1onx4 rr:column "[\"response\",\"venues\",\"contact\",\"phone\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx4 .
+
+km-dev:PredicateObjectMap_c0185202-24d1-464b-8cab-9357cb5aabfc rr:objectMap _:node19om8m1onx4 .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e rr:predicateObjectMap km-dev:PredicateObjectMap_c0185202-24d1-464b-8cab-9357cb5aabfc .
+
+km-dev:PredicateObjectMap_c0185202-24d1-464b-8cab-9357cb5aabfc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c0185202-24d1-464b-8cab-9357cb5aabfc .
+
+km-dev:PredicateObjectMap_4f21094c-eff9-4ca9-a903-32665d7e34ec rr:predicate rdfs:label .
+
+_:node19om8m1onx5 rr:column "[\"response\",\"venues\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx5 .
+
+km-dev:PredicateObjectMap_4f21094c-eff9-4ca9-a903-32665d7e34ec rr:objectMap _:node19om8m1onx5 .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e rr:predicateObjectMap km-dev:PredicateObjectMap_4f21094c-eff9-4ca9-a903-32665d7e34ec .
+
+km-dev:PredicateObjectMap_4f21094c-eff9-4ca9-a903-32665d7e34ec a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4f21094c-eff9-4ca9-a903-32665d7e34ec .
+
+km-dev:PredicateObjectMap_cd8f2425-91d7-4477-8058-fe5d0c205092 rr:predicate schema:description .
+
+_:node19om8m1onx6 rr:column "[\"response\",\"venues\",\"categories\",\"pluralName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx6 .
+
+km-dev:PredicateObjectMap_cd8f2425-91d7-4477-8058-fe5d0c205092 rr:objectMap _:node19om8m1onx6 .
+
+km-dev:TriplesMap_7cf424bb-2e6a-45c2-b975-6bdefb9d747e rr:predicateObjectMap km-dev:PredicateObjectMap_cd8f2425-91d7-4477-8058-fe5d0c205092 .
+
+km-dev:PredicateObjectMap_cd8f2425-91d7-4477-8058-fe5d0c205092 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd8f2425-91d7-4477-8058-fe5d0c205092 .
+
+km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c a rr:TriplesMap .
+
+_:node19om8m1onx1 km-dev:hasTriplesMap km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c .
+
+km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx7 rr:tableName "foursquare-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasLogicalTable _:node19om8m1onx7 .
+
+km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c rr:logicalTable _:node19om8m1onx7 ;
+	rr:subjectMap _:node19om8m1onx8 .
+
+_:node19om8m1onx1 km-dev:hasSubjectMap _:node19om8m1onx8 .
+
+_:node19om8m1onx8 km-dev:isPartOfMapping _:node19om8m1onx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_acd5e298-dffd-4035-bda0-7b5458d0f67b rr:predicate schema:description .
+
+_:node19om8m1onx9 rr:column "[\"response\",\"venues\",\"location\",\"lat-lng\"]" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#string" ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx9 .
+
+km-dev:PredicateObjectMap_acd5e298-dffd-4035-bda0-7b5458d0f67b rr:objectMap _:node19om8m1onx9 .
+
+km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c rr:predicateObjectMap km-dev:PredicateObjectMap_acd5e298-dffd-4035-bda0-7b5458d0f67b .
+
+km-dev:PredicateObjectMap_acd5e298-dffd-4035-bda0-7b5458d0f67b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_acd5e298-dffd-4035-bda0-7b5458d0f67b .
+
+km-dev:PredicateObjectMap_cb7df104-105e-439a-bdfc-4d4473e9f42a rr:predicate schema:latitude .
+
+_:node19om8m1onx10 rr:column "[\"response\",\"venues\",\"location\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx10 .
+
+km-dev:PredicateObjectMap_cb7df104-105e-439a-bdfc-4d4473e9f42a rr:objectMap _:node19om8m1onx10 .
+
+km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c rr:predicateObjectMap km-dev:PredicateObjectMap_cb7df104-105e-439a-bdfc-4d4473e9f42a .
+
+km-dev:PredicateObjectMap_cb7df104-105e-439a-bdfc-4d4473e9f42a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cb7df104-105e-439a-bdfc-4d4473e9f42a .
+
+km-dev:PredicateObjectMap_02aed951-7e6b-4832-9338-2d934cba7022 rr:predicate schema:longitude .
+
+_:node19om8m1onx11 rr:column "[\"response\",\"venues\",\"location\",\"lng\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx11 .
+
+km-dev:PredicateObjectMap_02aed951-7e6b-4832-9338-2d934cba7022 rr:objectMap _:node19om8m1onx11 .
+
+km-dev:TriplesMap_dbfc7981-3a29-468b-88f8-99b377c2c35c rr:predicateObjectMap km-dev:PredicateObjectMap_02aed951-7e6b-4832-9338-2d934cba7022 .
+
+km-dev:PredicateObjectMap_02aed951-7e6b-4832-9338-2d934cba7022 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_02aed951-7e6b-4832-9338-2d934cba7022 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 a rr:TriplesMap .
+
+_:node19om8m1onx1 km-dev:hasTriplesMap km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx12 rr:tableName "foursquare-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasLogicalTable _:node19om8m1onx12 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 rr:logicalTable _:node19om8m1onx12 ;
+	rr:subjectMap _:node19om8m1onx13 .
+
+_:node19om8m1onx1 km-dev:hasSubjectMap _:node19om8m1onx13 .
+
+_:node19om8m1onx13 km-dev:isPartOfMapping _:node19om8m1onx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/PostalAddress1" ;
+	rr:class schema:PostalAddress ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:PostalAddress1" .
+
+km-dev:PredicateObjectMap_20e6b0e6-afd2-4206-af61-bbe43f0df302 rr:predicate schema:addressCountry .
+
+km-dev:RefObjectMap_69ee5438-36fd-4991-811f-64289d0744b6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9b6c45b6-8501-4916-8388-4b76af9093eb ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap km-dev:RefObjectMap_69ee5438-36fd-4991-811f-64289d0744b6 .
+
+km-dev:PredicateObjectMap_20e6b0e6-afd2-4206-af61-bbe43f0df302 rr:objectMap km-dev:RefObjectMap_69ee5438-36fd-4991-811f-64289d0744b6 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 rr:predicateObjectMap km-dev:PredicateObjectMap_20e6b0e6-afd2-4206-af61-bbe43f0df302 .
+
+km-dev:PredicateObjectMap_20e6b0e6-afd2-4206-af61-bbe43f0df302 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_20e6b0e6-afd2-4206-af61-bbe43f0df302 .
+
+km-dev:PredicateObjectMap_7bea55dd-57c5-4495-a3ce-5675e78e49b5 rr:predicate schema:addressLocality .
+
+_:node19om8m1onx14 rr:column "[\"response\",\"venues\",\"location\",\"city\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx14 .
+
+km-dev:PredicateObjectMap_7bea55dd-57c5-4495-a3ce-5675e78e49b5 rr:objectMap _:node19om8m1onx14 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 rr:predicateObjectMap km-dev:PredicateObjectMap_7bea55dd-57c5-4495-a3ce-5675e78e49b5 .
+
+km-dev:PredicateObjectMap_7bea55dd-57c5-4495-a3ce-5675e78e49b5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7bea55dd-57c5-4495-a3ce-5675e78e49b5 .
+
+km-dev:PredicateObjectMap_d201c5b3-73a2-4f12-a7f2-4776b5ecb07e rr:predicate schema:streetAddress .
+
+_:node19om8m1onx15 rr:column "[\"response\",\"venues\",\"location\",\"address\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx15 .
+
+km-dev:PredicateObjectMap_d201c5b3-73a2-4f12-a7f2-4776b5ecb07e rr:objectMap _:node19om8m1onx15 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 rr:predicateObjectMap km-dev:PredicateObjectMap_d201c5b3-73a2-4f12-a7f2-4776b5ecb07e .
+
+km-dev:PredicateObjectMap_d201c5b3-73a2-4f12-a7f2-4776b5ecb07e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d201c5b3-73a2-4f12-a7f2-4776b5ecb07e .
+
+km-dev:PredicateObjectMap_5e686e1b-8357-41b2-8ba1-8575a00816f5 rr:predicate schema:addressRegion .
+
+_:node19om8m1onx16 rr:column "[\"response\",\"venues\",\"location\",\"state\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx16 .
+
+km-dev:PredicateObjectMap_5e686e1b-8357-41b2-8ba1-8575a00816f5 rr:objectMap _:node19om8m1onx16 .
+
+km-dev:TriplesMap_e4dd8eaa-8680-4293-bdc0-55ecabfbde33 rr:predicateObjectMap km-dev:PredicateObjectMap_5e686e1b-8357-41b2-8ba1-8575a00816f5 .
+
+km-dev:PredicateObjectMap_5e686e1b-8357-41b2-8ba1-8575a00816f5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e686e1b-8357-41b2-8ba1-8575a00816f5 .
+
+km-dev:TriplesMap_9b6c45b6-8501-4916-8388-4b76af9093eb a rr:TriplesMap .
+
+_:node19om8m1onx1 km-dev:hasTriplesMap km-dev:TriplesMap_9b6c45b6-8501-4916-8388-4b76af9093eb .
+
+km-dev:TriplesMap_9b6c45b6-8501-4916-8388-4b76af9093eb km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx17 rr:tableName "foursquare-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasLogicalTable _:node19om8m1onx17 .
+
+km-dev:TriplesMap_9b6c45b6-8501-4916-8388-4b76af9093eb rr:logicalTable _:node19om8m1onx17 ;
+	rr:subjectMap _:node19om8m1onx18 .
+
+_:node19om8m1onx1 km-dev:hasSubjectMap _:node19om8m1onx18 .
+
+_:node19om8m1onx18 km-dev:isPartOfMapping _:node19om8m1onx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Country1" ;
+	rr:class schema:Country ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Country1" .
+
+km-dev:PredicateObjectMap_8a8f9b66-4464-4c9c-a2cb-2f777dccf010 rr:predicate rdfs:label .
+
+_:node19om8m1onx19 rr:column "[\"response\",\"venues\",\"location\",\"country\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasObjectMap _:node19om8m1onx19 .
+
+km-dev:PredicateObjectMap_8a8f9b66-4464-4c9c-a2cb-2f777dccf010 rr:objectMap _:node19om8m1onx19 .
+
+km-dev:TriplesMap_9b6c45b6-8501-4916-8388-4b76af9093eb rr:predicateObjectMap km-dev:PredicateObjectMap_8a8f9b66-4464-4c9c-a2cb-2f777dccf010 .
+
+km-dev:PredicateObjectMap_8a8f9b66-4464-4c9c-a2cb-2f777dccf010 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19om8m1onx1 .
+
+_:node19om8m1onx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8a8f9b66-4464-4c9c-a2cb-2f777dccf010 .

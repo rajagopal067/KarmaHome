@@ -1,0 +1,681 @@
+{
+    "nodes": [
+        {
+            "id": "http://schema.org/Photograph1",
+            "label": {
+                "uri": "http://schema.org/Photograph"
+            },
+            "type": "InternalNode",
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "EAD1B7F6-BDAD-8FE0-F209-B979E54DB2CD",
+            "label": {
+                "uri": "HN4177"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN4177",
+            "columnName": "id",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "6B875EFD-9C65-32B1-2431-6EFFCA4BBD74",
+            "label": {
+                "uri": "HN4272"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN4272",
+            "columnName": "createdAt_iso",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "F5877CBD-5493-5B71-0B8B-73CBAA7822EF",
+            "label": {
+                "uri": "HN4196"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN4196",
+            "columnName": "height",
+            "rdfLiteralType": {
+                "uri": "http://www.w3.org/2001/XMLSchema#integer"
+            },
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "FF442004-233C-40E6-6FBE-184891E36279",
+            "label": {
+                "uri": "HN5189"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN5189",
+            "columnName": "photo_url",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "673F2388-682B-8B78-6D23-77B71E4B2D8B",
+            "label": {
+                "uri": "HN4194"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN4194",
+            "columnName": "width",
+            "rdfLiteralType": {
+                "uri": "http://www.w3.org/2001/XMLSchema#integer"
+            },
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/GeoCoordinates1",
+            "label": {
+                "uri": "http://schema.org/GeoCoordinates"
+            },
+            "type": "InternalNode",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Country1",
+            "label": {
+                "uri": "http://schema.org/Country"
+            },
+            "type": "InternalNode",
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1",
+            "label": {
+                "uri": "http://schema.org/Place"
+            },
+            "type": "InternalNode",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/PostalAddress1",
+            "label": {
+                "uri": "http://schema.org/PostalAddress"
+            },
+            "type": "InternalNode",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "AF959872-9E98-DCF8-C55B-8C4AC53892C5",
+            "label": {
+                "uri": "HN78"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN78",
+            "columnName": "country",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "6F6AF030-EBFE-1D2E-1EF1-393E3190FE2D",
+            "label": {
+                "uri": "HN4185"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN4185",
+            "columnName": "lat-lng",
+            "rdfLiteralType": {
+                "uri": "http://www.w3.org/2001/XMLSchema#string"
+            },
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "796A86E0-B848-9515-9707-8F7238689169",
+            "label": {
+                "uri": "HN64"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN64",
+            "columnName": "lat",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "A0086C21-A882-696C-AB63-9333C291184A",
+            "label": {
+                "uri": "HN66"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN66",
+            "columnName": "lng",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "4C4E2C15-F49F-AF09-1CB8-835AC191BD7C",
+            "label": {
+                "uri": "HN36"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN36",
+            "columnName": "id",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "6DEBCB1D-A990-1345-BD21-6624C0AFE9D2",
+            "label": {
+                "uri": "HN98"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN98",
+            "columnName": "pluralName",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "8E038584-BE57-DFB6-838E-C456989E9A1B",
+            "label": {
+                "uri": "HN45"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN45",
+            "columnName": "phone",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "FB51EAD5-01DB-1253-D4F0-AB2F7896A04C",
+            "label": {
+                "uri": "HN38"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN38",
+            "columnName": "name",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "8DF85C5B-F7FB-70E7-7948-882666EEAF59",
+            "label": {
+                "uri": "HN74"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN74",
+            "columnName": "city",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "8FAB7326-B066-5981-A5D4-4C8F199EC2D1",
+            "label": {
+                "uri": "HN76"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN76",
+            "columnName": "state",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "2B694653-43F6-65CE-0477-F3394436AE25",
+            "label": {
+                "uri": "HN62"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN62",
+            "columnName": "address",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/GeoShape1",
+            "label": {
+                "uri": "http://schema.org/GeoShape"
+            },
+            "type": "InternalNode",
+            "modelIds": [
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "3534F97E-C249-1AD0-6173-1939B9D6295F",
+            "label": {
+                "uri": "HN2353"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN2353",
+            "columnName": "boundingbox",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "1E38855E-AF51-8326-5734-7BB7A9DC0CF5",
+            "label": {
+                "uri": "HN161"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN161",
+            "columnName": "name",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "47C3D58C-E7B0-3B6D-C599-1FAFAA7F987C",
+            "label": {
+                "uri": "HN133"
+            },
+            "type": "ColumnNode",
+            "hNodeId": "HN133",
+            "columnName": "postalCode",
+            "rdfLiteralType": null,
+            "userSemanticTypes": [],
+            "learnedSemanticTypes": null,
+            "modelIds": [
+                "foursquare.json"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "id": "http://schema.org/Photograph1---http://isi.edu/integration/karma/dev#classLink---EAD1B7F6-BDAD-8FE0-F209-B979E54DB2CD",
+            "weight": 1.0,
+            "type": "ClassInstanceLink",
+            "label": {
+                "uri": "http://isi.edu/integration/karma/dev#classLink"
+            },
+            "status": "Normal",
+            "keyInfo": "UriOfInstance",
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Photograph1---http://schema.org/dateCreated---6B875EFD-9C65-32B1-2431-6EFFCA4BBD74",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/dateCreated"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Photograph1---http://schema.org/height---F5877CBD-5493-5B71-0B8B-73CBAA7822EF",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/height"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Photograph1---http://schema.org/url---FF442004-233C-40E6-6FBE-184891E36279",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/url"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Photograph1---http://schema.org/width---673F2388-682B-8B78-6D23-77B71E4B2D8B",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/width"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-photos-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Country1---http://www.w3.org/2000/01/rdf-schema#label---AF959872-9E98-DCF8-C55B-8C4AC53892C5",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/GeoCoordinates1---http://schema.org/description---6F6AF030-EBFE-1D2E-1EF1-393E3190FE2D",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/description"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/GeoCoordinates1---http://schema.org/latitude---796A86E0-B848-9515-9707-8F7238689169",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/latitude"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/GeoCoordinates1---http://schema.org/longitude---A0086C21-A882-696C-AB63-9333C291184A",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/longitude"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://isi.edu/integration/karma/dev#classLink---4C4E2C15-F49F-AF09-1CB8-835AC191BD7C",
+            "weight": 1.0,
+            "type": "ClassInstanceLink",
+            "label": {
+                "uri": "http://isi.edu/integration/karma/dev#classLink"
+            },
+            "status": "Normal",
+            "keyInfo": "UriOfInstance",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://schema.org/address---http://schema.org/PostalAddress1",
+            "weight": 0.99999,
+            "type": "ObjectPropertyLink",
+            "label": {
+                "uri": "http://schema.org/address"
+            },
+            "objectPropertyType": "Direct",
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://schema.org/description---6DEBCB1D-A990-1345-BD21-6624C0AFE9D2",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/description"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://schema.org/geo---http://schema.org/GeoCoordinates1",
+            "weight": 0.99999,
+            "type": "ObjectPropertyLink",
+            "label": {
+                "uri": "http://schema.org/geo"
+            },
+            "objectPropertyType": "Direct",
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://schema.org/telephone---8E038584-BE57-DFB6-838E-C456989E9A1B",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/telephone"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://www.w3.org/2000/01/rdf-schema#label---FB51EAD5-01DB-1253-D4F0-AB2F7896A04C",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/PostalAddress1---http://schema.org/addressCountry---http://schema.org/Country1",
+            "weight": 1.0,
+            "type": "ObjectPropertyLink",
+            "label": {
+                "uri": "http://schema.org/addressCountry"
+            },
+            "objectPropertyType": "Direct",
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/PostalAddress1---http://schema.org/addressLocality---8DF85C5B-F7FB-70E7-7948-882666EEAF59",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/addressLocality"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/PostalAddress1---http://schema.org/addressRegion---8FAB7326-B066-5981-A5D4-4C8F199EC2D1",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/addressRegion"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/PostalAddress1---http://schema.org/streetAddress---2B694653-43F6-65CE-0477-F3394436AE25",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/streetAddress"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare-sample.json",
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/GeoShape1---http://schema.org/box---3534F97E-C249-1AD0-6173-1939B9D6295F",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/box"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://isi.edu/integration/karma/dev#columnSubClassOfLink---1E38855E-AF51-8326-5734-7BB7A9DC0CF5",
+            "weight": 1.0,
+            "type": "ColumnSubClassLink",
+            "label": {
+                "uri": "http://isi.edu/integration/karma/dev#columnSubClassOfLink"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/Place1---http://schema.org/geo---http://schema.org/GeoShape1",
+            "weight": 1.0,
+            "type": "ObjectPropertyLink",
+            "label": {
+                "uri": "http://schema.org/geo"
+            },
+            "objectPropertyType": "Direct",
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare.json"
+            ]
+        },
+        {
+            "id": "http://schema.org/PostalAddress1---http://schema.org/postalCode---47C3D58C-E7B0-3B6D-C599-1FAFAA7F987C",
+            "weight": 1.0,
+            "type": "DataPropertyLink",
+            "label": {
+                "uri": "http://schema.org/postalCode"
+            },
+            "status": "Normal",
+            "keyInfo": "None",
+            "modelIds": [
+                "foursquare.json"
+            ]
+        }
+    ]
+}
